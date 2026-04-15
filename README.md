@@ -253,7 +253,7 @@ project/
 ### 1️⃣ Clone Repository
 
 ```
-git clone https://github.com/your-username/proctoguard.git
+git clone https://github.com/imthiyaz-syed/smart-exam-proctoring.git
 cd proctoguard
 ```
 
