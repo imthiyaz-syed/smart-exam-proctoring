@@ -1,0 +1,82 @@
+{% extends 'faculty_home.html' %}
+
+{% block content %}
+<main class="ui-page">
+  <div class="ui-shell ui-stack">
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+        <div class="ui-alert-stack ui-reveal">
+          {% for category, message in messages %}
+            <div class="alert alert-{{ category }}">{{ message }}</div>
+          {% endfor %}
+        </div>
+      {% endif %}
+    {% endwith %}
+
+    <section class="ui-split">
+      <div class="register-wrapper ui-reveal">
+        <form action="{{ url_for('qsnback') }}" method="POST" class="ui-form-grid">
+          <h2 class="text-uppercase">Add Question</h2>
+          <div class="mb-3">
+            <label for="sub" class="form-label">Subject</label>
+            <input type="text" class="form-control" id="sub" name="sub" required placeholder="Enter subject name">
+          </div>
+          <div class="mb-3">
+            <label for="qsn" class="form-label">Question</label>
+            <input type="text" class="form-control" id="qsn" name="qsn" required placeholder="Enter your question">
+          </div>
+          <div class="mb-3">
+            <label for="opt1" class="form-label">Option 1</label>
+            <input type="text" class="form-control" id="opt1" name="opt1" required placeholder="Option 1">
+          </div>
+          <div class="mb-3">
+            <label for="opt2" class="form-label">Option 2</label>
+            <input type="text" class="form-control" id="opt2" name="opt2" required placeholder="Option 2">
+          </div>
+          <div class="mb-3">
+            <label for="opt3" class="form-label">Option 3</label>
+            <input type="text" class="form-control" id="opt3" name="opt3" required placeholder="Option 3">
+          </div>
+          <div class="mb-3">
+            <label for="opt4" class="form-label">Option 4</label>
+            <input type="text" class="form-control" id="opt4" name="opt4" required placeholder="Option 4">
+          </div>
+          <div class="mb-3">
+            <label for="ans" class="form-label">Correct Answer</label>
+            <select name="ans" id="ans" class="form-select" required>
+              <option value="">Choose Correct Answer</option>
+              <option value="a">A</option>
+              <option value="b">B</option>
+              <option value="c">C</option>
+              <option value="d">D</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary">Add Question</button>
+        </form>
+      </div>
+
+      <div class="ui-panel ui-reveal">
+        <span class="ui-kicker">Question bank</span>
+        <h2 class="ui-section-title">Create cleaner paper-ready questions.</h2>
+        <p class="ui-lead">
+          Add subject-wise questions with structured options so they can be reused later during exam creation.
+        </p>
+        <div class="ui-metrics">
+          <div class="ui-metric">
+            <strong>Reusable</strong>
+            <span>Store questions for future papers.</span>
+          </div>
+          <div class="ui-metric">
+            <strong>Consistent</strong>
+            <span>Keep answer choices aligned with one correct option.</span>
+          </div>
+          <div class="ui-metric">
+            <strong>Ready to publish</strong>
+            <span>Convert saved items into full exam papers later.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+{% endblock %}

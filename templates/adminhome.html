@@ -1,0 +1,67 @@
+{% extends 'index.html' %}
+
+{% block navbar %}
+<header class="header-area header-sticky">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <nav class="main-nav navbar">
+          <a href="{{ url_for('adminhome') }}" class="logo">
+            <h1>PROCTOGUARD</h1>
+          </a>
+          <ul class="nav">
+            <li class="scroll-to-section"><a href="{{ url_for('adminhome') }}" class="active">Home</a></li>
+            <li class="scroll-to-section"><a href="{{ url_for('Add_faculty') }}">Add Faculty</a></li>
+            <li class="scroll-to-section"><a href="{{ url_for('training') }}">Train Students</a></li>
+            <li class="scroll-to-section"><a href="{{ url_for('view_questions') }}">View Question Papers</a></li>
+            <li class="scroll-to-section"><a href="{{ url_for('adminlogout') }}">Logout</a></li>
+          </ul>
+          <a href="#" class="menu-trigger">
+            <span>Menu</span>
+          </a>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+{% endblock %}
+
+{% block content %}
+<main class="ui-page">
+  <div class="ui-shell ui-stack">
+    <section class="ui-split">
+      <div class="ui-reveal">
+        <span class="ui-kicker">Admin control center</span>
+        <h1 class="ui-title">Manage platform access, training, and question visibility from a sharper command view.</h1>
+        <p class="ui-lead">
+          The admin workspace is responsible for operational readiness across the full exam platform,
+          from faculty onboarding to question paper visibility and biometric preparation.
+        </p>
+        <div class="ui-action-row">
+          <a href="{{ url_for('Add_faculty') }}" class="btn btn-primary">Add Faculty</a>
+          <a href="{{ url_for('training') }}" class="btn btn-warning">Train Students</a>
+          <a href="{{ url_for('view_questions') }}" class="btn btn-secondary">View Papers</a>
+        </div>
+        <div class="ui-metrics">
+          <div class="ui-metric">
+            <strong>Onboarding</strong>
+            <span>Create and manage faculty records from one place.</span>
+          </div>
+          <div class="ui-metric">
+            <strong>Preparation</strong>
+            <span>Support training workflows before monitored exams begin.</span>
+          </div>
+          <div class="ui-metric">
+            <strong>Oversight</strong>
+            <span>Review papers and registrations with clearer visibility.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="ui-panel ui-reveal">
+        <img src="{{ url_for('static', filename='assets/images/adminhome1.jpg') }}" alt="Admin dashboard" class="ui-media">
+      </div>
+    </section>
+  </div>
+</main>
+{% endblock %}

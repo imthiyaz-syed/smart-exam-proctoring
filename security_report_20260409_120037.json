@@ -1,0 +1,1641 @@
+{
+  "exam_id": "20260409_120037",
+  "timestamp": "2026-04-09T12:00:37.535206",
+  "total_violations": 3,
+  "security_events": [
+    {
+      "timestamp": "2026-04-09T12:00:07.438484",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:07.621963",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:07.772024",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:07.930790",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:08.063081",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:08.206601",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:08.318323",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:08.461954",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:08.619993",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:08.765168",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:08.911965",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:09.080409",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:09.226056",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:09.377204",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:09.519777",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:09.678638",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:09.822291",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:09.966145",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:10.080778",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:10.223822",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:10.368655",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:10.482914",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:10.624592",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:10.783315",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:10.929838",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:11.070670",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:11.183026",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:11.326040",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:11.485619",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:11.643292",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:11.776680",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:11.894935",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:12.029397",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:12.174422",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:12.286020",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:12.429704",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:12.590008",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:12.741727",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:12.877029",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:12.993946",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:13.137964",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:13.295983",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:13.437127",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:13.582761",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:13.696524",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:13.839385",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:13.999937",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:14.132414",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:14.234664",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:14.395110",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:14.535859",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:14.634051",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:14.743074",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:14.842540",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:14.981043",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:15.128731",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:15.240449",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:15.383546",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:15.496271",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:15.642642",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:15.797851",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:15.895792",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:15.993777",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:16.091238",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:16.202483",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:16.341064",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:16.438728",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:16.550021",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:16.651473",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:16.792292",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:16.908731",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:17.052375",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:17.188383",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:17.305282",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:17.445330",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:17.546100",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:17.657000",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:17.795912",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:17.894323",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:18.008841",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:18.153971",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:18.317455",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:18.454529",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:18.553867",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:18.712372",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:18.811207",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:18.953817",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:19.065512",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:19.163307",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:19.301658",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:19.419436",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:19.565539",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:19.703872",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:19.816454",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:19.914091",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:20.053140",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:20.165902",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:20.265163",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:20.404701",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:20.554469",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:20.671504",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:20.810897",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:20.921256",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:21.061381",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:21.160696",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:21.270201",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:21.368333",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:21.463875",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:21.579244",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:21.718722",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:21.815564",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:21.931907",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:22.077873",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:22.224573",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:22.386713",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:22.541321",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:22.696587",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:22.843891",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:22.991328",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:23.151934",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:23.341818",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:23.504993",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:23.694735",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:23.852263",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:24.003258",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:24.158893",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:24.348599",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:24.507180",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:24.655628",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:24.868634",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:25.069463",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:25.260327",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:25.407298",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:25.565217",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:25.710859",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:25.918663",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:26.065688",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:26.269375",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:26.425795",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:26.623710",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:26.772349",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:26.955097",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:27.116079",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:27.321988",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:27.525616",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:27.731269",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:27.915778",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:28.072883",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:28.218496",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:28.429869",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:28.573888",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:28.778092",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:28.929767",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:29.126046",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:29.290653",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:29.464836",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:29.629937",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:29.817385",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:29.976562",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:30.125209",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:30.286384",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:30.436260",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:30.593635",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:30.781165",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:30.939881",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:31.086067",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:31.227767",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:31.387567",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:31.532376",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:31.692140",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:31.840325",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:32.050151",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:32.233604",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:32.394588",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:32.539323",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:32.684740",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:32.841137",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:32.988998",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:33.144688",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:33.297963",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:33.507390",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:33.692161",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:33.850212",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:33.996062",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:34.253763",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:34.399994",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:34.553439",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:34.703965",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:34.855095",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:35.006489",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:35.155831",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:35.308225",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:35.452497",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:35.596166",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:35.755474",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:35.899503",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:36.059510",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:36.211364",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:36.370251",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:36.563821",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:36.716448",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:36.861334",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:37.004243",
+      "type": "ALERT",
+      "details": {
+        "message": "Face too close to camera!"
+      },
+      "severity": "MEDIUM"
+    },
+    {
+      "timestamp": "2026-04-09T12:00:37.074880",
+      "type": "ALERT",
+      "details": {
+        "message": "Maximum violations (3) reached! Exam terminated."
+      },
+      "severity": "CRITICAL"
+    }
+  ],
+  "head_movement_summary": {
+    "total_movements": 100,
+    "unique_orientations": 

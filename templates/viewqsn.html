@@ -1,0 +1,46 @@
+{% extends 'adminhome.html' %}
+
+{% block content %}
+<main class="ui-page">
+  <div class="ui-shell ui-stack">
+    <section class="ui-reveal">
+      <div class="ui-panel ui-table-panel">
+        <span class="ui-kicker">Question library</span>
+        <h2 class="ui-section-title">View question and answer information</h2>
+
+        {% if row_val %}
+          <div class="table-responsive">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Question</th>
+                  <th>Options</th>
+                  <th>Answer</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for r in row_val %}
+                  <tr>
+                    <td class="question">{{ r[0] }}</td>
+                    <td>
+                      <ul class="options">
+                        <li><strong>A.</strong> {{ r[1] }}</li>
+                        <li><strong>B.</strong> {{ r[2] }}</li>
+                        <li><strong>C.</strong> {{ r[3] }}</li>
+                        <li><strong>D.</strong> {{ r[4] }}</li>
+                      </ul>
+                    </td>
+                    <td class="answer">{{ r[5] }}</td>
+                  </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+        {% else %}
+          <div class="ui-empty">No question papers are available yet.</div>
+        {% endif %}
+      </div>
+    </section>
+  </div>
+</main>
+{% endblock %}

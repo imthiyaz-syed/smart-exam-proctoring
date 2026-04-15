@@ -1,0 +1,55 @@
+{% extends 'faculty_home.html' %}
+
+{% block content %}
+<main class="ui-page">
+  <div class="ui-shell ui-stack">
+    <section class="ui-reveal">
+      <div class="ui-panel ui-table-panel">
+        <span class="ui-kicker">Detailed results</span>
+        <h2 class="ui-section-title">Student exam activity and status</h2>
+
+        {% if row_val %}
+          <div class="table-responsive">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>S.No</th>
+                  <th>Student ID</th>
+                  <th>Student Email</th>
+                  <th>Exam Name</th>
+                  <th>Exam Date</th>
+                  <th>Correct Answers</th>
+                  <th>No. of Questions</th>
+                  <th>Exam Status</th>
+                  <th>Head Status</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for r in row_val %}
+                  <tr>
+                    <td>{{ loop.index }}</td>
+                    <td>{{ r[1] }}</td>
+                    <td>{{ r[2] }}</td>
+                    <td>{{ r[3] }}</td>
+                    <td>{{ r[4] }}</td>
+                    <td>{{ r[5] }}</td>
+                    <td>{{ r[6] }}</td>
+                    <td>{{ r[7] }}</td>
+                    <td>{{ r[8] }}</td>
+                    <td>
+                      <a href="{{ url_for('reply_mail', s=r[0], s1=r[1], s2=r[2], s3=r[3], s4=r[7]) }}" class="btn btn-warning">Reply</a>
+                    </td>
+                  </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+        {% else %}
+          <div class="ui-empty">No detailed student results are available for this exam.</div>
+        {% endif %}
+      </div>
+    </section>
+  </div>
+</main>
+{% endblock %}

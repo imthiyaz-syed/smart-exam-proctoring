@@ -1,0 +1,48 @@
+{% extends 'studenthome.html' %}
+
+{% block content %}
+<main class="ui-page">
+  <div class="ui-shell ui-stack">
+    <section class="ui-reveal">
+      <div class="ui-panel ui-table-panel">
+        <span class="ui-kicker">Result summary</span>
+        <h2 class="ui-section-title">Your exam results</h2>
+        <p class="ui-lead">Review your completed exams and see the number of correct answers recorded for each paper.</p>
+
+        {% if row_val %}
+          <div class="table-responsive">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Exam Name</th>
+                  <th>Exam Date</th>
+                  <th>Correct Answers</th>
+                  <th>No. of Questions</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for r in row_val %}
+                  <tr>
+                    <td>{{ r['ename'] }}</td>
+                    <td>{{ r['edate'] }}</td>
+                    <td>{{ r['ca'] }}</td>
+                    <td>{{ r['ua'] }}</td>
+                  </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+        {% else %}
+          <div class="ui-empty">No results are available yet.</div>
+        {% endif %}
+
+        <div class="ui-panel soft mt-4">
+          <p class="ui-lead mb-0">
+            Review your performance carefully and use it to prepare better for the next scheduled exam.
+          </p>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+{% endblock %}

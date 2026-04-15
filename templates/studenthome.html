@@ -1,0 +1,62 @@
+{% extends 'index.html' %}
+
+{% block navbar %}
+<header class="header-area header-sticky">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <nav class="main-nav navbar">
+          <a href="{{ url_for('studenthome') }}" class="logo">
+            <h1>PROCTOGUARD</h1>
+          </a>
+          <ul class="nav">
+            <li class="scroll-to-section"><a href="{{ url_for('studenthome') }}" class="active">Home</a></li>
+            <li class="scroll-to-section"><a href="{{ url_for('view_exam') }}">View Exams</a></li>
+            <li class="scroll-to-section"><a href="{{ url_for('view_result') }}">View Results</a></li>
+            <li class="scroll-to-section"><a href="{{ url_for('studentlogin') }}">Logout</a></li>
+          </ul>
+          <a href="#" class="menu-trigger">
+            <span>Menu</span>
+          </a>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+{% endblock %}
+
+{% block content %}
+<main class="ui-page">
+  <div class="ui-shell ui-stack">
+    <section class="ui-split">
+      <div class="ui-reveal">
+        <span class="ui-kicker">Student workspace</span>
+        <h1 class="ui-title">Take monitored exams with clear rules, visible schedules, and a calmer interface.</h1>
+        <p class="ui-lead">
+          Welcome {{ session.get('name', 'Student') }}. Before starting an exam, review the rules carefully and
+          make sure your system is ready for an uninterrupted attempt.
+        </p>
+        <div class="ui-panel soft">
+          <h2 class="ui-section-title">Exam readiness checklist</h2>
+          <ol class="instruction-list">
+            <li>Stay visible to the webcam for the full duration of the exam.</li>
+            <li>Avoid switching tabs, opening tools, or using unauthorized devices.</li>
+            <li>Keep your connection stable and remain on the exam page until submission finishes.</li>
+            <li>Violations can trigger automatic warnings or immediate exam termination.</li>
+          </ol>
+          <div class="ui-action-row">
+            <a href="{{ url_for('view_exam') }}" class="btn btn-primary">View Available Exams</a>
+            <a href="{{ url_for('view_result') }}" class="btn btn-warning">View Results</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="ui-panel ui-reveal">
+        <img src="{{ url_for('static', filename='assets/images/2.jpg') }}" alt="Student dashboard" class="ui-media">
+      </div>
+    </section>
+  </div>
+</main>
+{% endblock %}
+
+{% block footer %}{% endblock %}

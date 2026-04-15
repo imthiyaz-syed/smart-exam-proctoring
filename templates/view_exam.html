@@ -1,0 +1,52 @@
+{% extends 'studenthome.html' %}
+
+{% block content %}
+<main class="ui-page">
+  <div class="ui-shell ui-stack">
+    <section class="ui-reveal">
+      <div class="ui-panel ui-table-panel">
+        <span class="ui-kicker">Upcoming exams</span>
+        <h2 class="ui-section-title">Available exams</h2>
+        <p class="ui-lead">Review upcoming papers and enter the exam room when you are ready.</p>
+
+        {% if row_val %}
+          <div class="table-responsive">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Exam Name</th>
+                  <th>Exam Date</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for exam in row_val %}
+                  <tr>
+                    <td>{{ loop.index }}</td>
+                    <td>{{ exam['hh'] }}</td>
+                    <td>{{ exam['i'] }}</td>
+                    <td>
+                      <a href="{{ url_for('take_test', s=exam['id'], s1=exam['hh'], s2=exam['i']) }}" class="btn btn-warning">Take Test</a>
+                    </td>
+                  </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+        {% else %}
+          <div class="ui-empty">There are no upcoming exams available right now.</div>
+        {% endif %}
+
+        {% with messages = get_flashed_messages() %}
+          {% if messages %}
+            <div class="ui-alert-stack mt-4">
+              <div class="alert alert-success">{{ messages[0] }}</div>
+            </div>
+          {% endif %}
+        {% endwith %}
+      </div>
+    </section>
+  </div>
+</main>
+{% endblock %}

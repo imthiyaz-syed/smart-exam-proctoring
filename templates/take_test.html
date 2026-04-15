@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam - Security Monitoring Active</title>
+    <style>
+        :root {
+            --exam-bg: #07111f;
+            --exam-panel: rgba(10, 23, 40, 0.92);
+            --exam-panel-light: rgba(255, 255, 255, 0.08);
+            --exam-border: rgba(123, 183, 255, 0.18);
+            --exam-text: #eef5ff;
+            --exam-muted: #9cb4d0;
+            --exam-accent: #79bcff;
+            --exam-highlight: #8ef0d1;
+            --exam-danger: #ff748b;
+            --exam-success: #7de6a3;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Space Grotesk", "Segoe UI", sans-serif;
+            margin: 0;
+            padding: 26px;
+            color: var(--exam-text);
+            background:
+                radial-gradient(circle at 18% 20%, rgba(37, 119, 216, 0.32), transparent 20%),
+                radial-gradient(circle at 82% 16%, rgba(142, 240, 209, 0.18), transparent 18%),
+                linear-gradient(145deg, #050c16 0%, #0a1729 46%, #102847 100%);
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            background-image:
+                linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+            background-size: 56px 56px;
+            mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.92), transparent 92%);
+            pointer-events: none;
+        }
+
+        .exam-container {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 34px;
+            border-radius: 28px;
+            background: linear-gradient(180deg, rgba(12, 28, 48, 0.96), rgba(7, 17, 31, 0.96));
+            border: 1px solid var(--exam-border);
+            box-shadow: 0 26px 55px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(18px);
+        }
+
+        .exam-container h1 {
+            margin: 0 0 24px;
+            color: #ffffff;
+            font-size: clamp(2rem, 4vw, 3.4rem);
+            letter-spacing: -0.04em;
+        }
+
+        .security-panel {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            width: 310px;
+            padding: 18px;
+            border-radius: 20px;
+            z-index: 1000;
+            font-size: 14px;
+            color: var(--exam-text);
+            background: rgba(7, 17, 31, 0.96);
+            border: 1px solid rgba(255, 116, 139, 0.25);
+            box-shadow: 0 18px 36px rgba(0, 0, 0, 0.35);
+        }
+
+        .security-panel h4 {
+            margin: 0 0 12px;
+            color: #ffffff;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            font-size: 0.9rem;
+        }
+
+        .warning-count {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--exam-danger);
+        }
+
+        .alert {
+            color: var(--exam-danger);
+            font-weight: 700;
+            animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.55; }
+        }
+
+        .question {
+            margin-bottom: 18px;
+            padding: 22px;
+            border-radius: 22px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            transition: transform 0.22s ease, border-color 0.22s ease, background 0.22s ease;
+        }
+
+        .question:hover {
+            transform: translateY(-2px);
+            border-color: rgba(123, 183, 255, 0.24);
+            background: rgba(255, 255, 255, 0.07);
+        }
+
+        .question h3 {
+            margin: 0 0 18px;
+            color: #ffffff;
+            line-height: 1.55;
+            font-size: 1.08rem;
+        }
+
+        .options {
+            display: grid;
+            gap: 10px;
+        }
+
+        .options label {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            margin: 0;
+            padding: 14px 16px;
+            line-height: 1.6;
+            border-radius: 16px;
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid transparent;
+            color: var(--exam-muted);
+            cursor: pointer;
+            transition: border-color 0.2s ease, background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+        }
+
+        .options label:hover {
+            transform: translateY(-1px);
+            border-color: rgba(123, 183, 255, 0.24);
+            background: rgba(255, 255, 255, 0.07);
+            color: var(--exam-text);
+        }
+
+        .options input[type="radio"] {
+            margin-top: 4px;
+            accent-color: var(--exam-accent);
+            transform: scale(1.08);
+        }
+
+        .timer {
+            position: fixed;
+            top: 24px;
+            left: 24px;
+            min-width: 144px;
+            padding: 14px 18px;
+            border-radius: 18px;
+            background: rgba(7, 17, 31, 0.95);
+            color: var(--exam-success);
+            font-size: 28px;
+            font-weight: 700;
+            font-family: monospace;
+            text-align: center;
+            z-index: 1000;
+            border: 1px solid rgba(125, 230, 163, 0.22);
+            box-shadow: 0 16px 32px rgba(0, 0, 0, 0.32);
+        }
+
+        .submit-btn {
+            min-height: 54px;
+            padding: 15px 28px;
+            border: 0;
+            border-radius: 18px;
+            background: linear-gradient(135deg, #2577d8, #79bcff, #8ef0d1);
+            color: #07111f;
+            font-size: 0.95rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            cursor: pointer;
+            margin-top: 18px;
+            box-shadow: 0 18px 34px rgba(37, 119, 216, 0.34);
+            transition: transform 0.22s ease, box-shadow 0.22s ease, filter 0.22s ease;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 24px 42px rgba(37, 119, 216, 0.42);
+            filter: brightness(1.04);
+        }
+
+        .warning-banner {
+            margin-bottom: 22px;
+            padding: 14px 16px;
+            border-radius: 16px;
+            text-align: center;
+            color: white;
+            background: rgba(255, 116, 139, 0.16);
+            border: 1px solid rgba(255, 116, 139, 0.28);
+            animation: blink 1s infinite;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 100px 12px 18px;
+            }
+
+            .exam-container {
+                padding: 22px;
+                border-radius: 22px;
+            }
+
+            .timer {
+                top: 12px;
+                left: 12px;
+                font-size: 22px;
+                min-width: 118px;
+            }
+
+            .security-panel {
+                top: 12px;
+                right: 12px;
+                width: calc(100vw - 150px);
+                max-width: 250px;
+                padding: 14px;
+            }
+
+            .question {
+                padding: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="timer" id="timer">60:00</div>
+
+    <div class="security-panel" id="security-status">
+        <h4>Security Monitoring Active</h4>
+        <div id="security-content">
+            Loading security status...
+        </div>
+    </div>
+
+    <div class="exam-container">
+        <h1>Online Examination</h1>
+
+        <div id="warning-banner" style="display: none;" class="warning-banner">
+            SECURITY WARNING: Please follow exam rules!
+        </div>
+
+        <form id="exam-form" method="POST" action="/textback">
+            <input type="hidden" name="dpr" id="dpr" value="{{ r1 }}">
+            <input type="hidden" name="s1" value="{{ s1 }}">
+            <input type="hidden" name="s2" value="{{ s2 }}">
+
+            {% for question in questions %}
+            <div class="question">
+                <h3>Question {{ loop.index }}: {{ question.question }}</h3>
+                <div class="options">
+                    <label>
+                        <input type="radio" name="myans{{ loop.index0 }}" value="a" required>
+                        A) {{ question.opt1 }}
+                    </label>
+                    <label>
+                        <input type="radio" name="myans{{ loop.index0 }}" value="b">
+                        B) {{ question.opt2 }}
+                    </label>
+                    <label>
+                        <input type="radio" name="myans{{ loop.index0 }}" value="c">
+                        C) {{ question.opt3 }}
+                    </label>
+                    <label>
+                        <input type="radio" name="myans{{ loop.index0 }}" value="d">
+                        D) {{ question.opt4 }}
+                    </label>
+                </div>
+                <input type="hidden" name="currans{{ loop.index0 }}" value="{{ question.answer }}">
+            </div>
+            {% endfor %}
+
+            <button type="submit" class="submit-btn" onclick="return confirmSubmit()">Submit Exam</button>
+        </form>
+    </div>
+
+    <script>
+        let timeLeft = 3600;
+        let examActive = true;
+        let warningCount = 0;
+        let logoutTriggered = false;
+
+        function terminateAndLogout(reason) {
+            if (logoutTriggered) return;
+            logoutTriggered = true;
+            examActive = false;
+
+            const message = reason
+                ? `Exam terminated: ${reason}. You will be logged out now.`
+                : "Exam terminated due to security violations. You will be logged out now.";
+
+            alert(message);
+            window.location.href = '/logout';
+        }
+
+        function reportScreenshotAttempt(reason) {
+            fetch('/report_screenshot_attempt', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ reason })
+            })
+                .then(response => response.json())
+                .then(data => {
+                    terminateAndLogout(data.termination_reason || reason || 'Screenshot attempt detected');
+                })
+                .catch(() => {
+                    terminateAndLogout(reason || 'Screenshot attempt detected');
+                });
+        }
+
+        function updateTimer() {
+            if (!examActive) return;
+
+            if (timeLeft <= 0) {
+                document.getElementById('timer').textContent = '00:00';
+                alert("Time's up! Submitting exam...");
+                document.getElementById('exam-form').submit();
+                return;
+            }
+
+            const minutes = Math.floor(timeLeft / 60);
+            const seconds = timeLeft % 60;
+            document.getElementById('timer').textContent = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+            timeLeft--;
+        }
+
+        updateTimer();
+        setInterval(updateTimer, 1000);
+
+        function getSecurityStatus() {
+            fetch('/get_security_status')
+                .then(response => response.json())
+                .then(data => {
+                    const securityDiv = document.getElementById('security-content');
+                    const warningBanner = document.getElementById('warning-banner');
+
+                    warningCount = data.warnings;
+
+                    let statusHtml = `
+                        <p>Warnings: <span class="warning-count">${data.warnings}/${data.max_warnings}</span></p>
+                        <p>Phone Detections: ${data.phone_detections}</p>
+                        <p>Screenshot Attempts: ${data.screenshot_attempts || 0}</p>
+                        <p>Violations: ${data.violations_count}</p>
+                        <p>Remaining: ${data.remaining_warnings}</p>
+                    `;
+
+                    if (data.warnings >= 1) {
+                        statusHtml += `<p class="alert">WARNING: ${data.warnings} violation(s) recorded!</p>`;
+                        warningBanner.style.display = 'block';
+                    } else {
+                        warningBanner.style.display = 'none';
+                    }
+
+                    if (data.warnings >= 2) {
+                        statusHtml += `<p class="alert">FINAL WARNING: One more violation will terminate exam!</p>`;
+                    }
+
+                    if (data.exam_terminated) {
+                        const reason = data.termination_reason || data.status || 'Security violation detected';
+                        statusHtml += `<p class="alert">EXAM TERMINATED: ${reason}</p>`;
+                        securityDiv.innerHTML = statusHtml;
+                        terminateAndLogout(reason);
+                        return;
+                    }
+
+                    securityDiv.innerHTML = statusHtml;
+                })
+                .catch(error => console.error('Error fetching security status:', error));
+        }
+
+        setInterval(getSecurityStatus, 1000);
+
+        function checkExamStatus() {
+            fetch('/check_exam_status')
+                .then(response => response.json())
+                .then(data => {
+                    if (data.status === 'terminated') {
+                        terminateAndLogout(data.reason || 'Security violation detected');
+                    }
+                })
+                .catch(error => console.error('Error checking exam status:', error));
+        }
+
+        setInterval(checkExamStatus, 1000);
+
+        document.addEventListener('copy', function(e) {
+            e.preventDefault();
+            alert("Copying is prohibited during exam!");
+        });
+
+        document.addEventListener('paste', function(e) {
+            e.preventDefault();
+            alert("Pasting is prohibited during exam!");
+        });
+
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+            alert("Right-click is disabled during exam!");
+        });
+
+        document.addEventListener('visibilitychange', function() {
+            if (document.hidden) {
+                alert("Warning: Switching tabs during exam is prohibited!");
+                fetch('/report_tab_switch', { method: 'POST' });
+            }
+        });
+
+        document.addEventListener('keydown', function(e) {
+            if (e.ctrlKey && (e.key === 'c' || e.key === 'v' || e.key === 'x' || e.key === 's')) {
+                e.preventDefault();
+                alert("Keyboard shortcuts are disabled during exam!");
+            }
+            if (e.key === 'PrintScreen') {
+                e.preventDefault();
+                reportScreenshotAttempt('Print Screen detected');
+                if (navigator.clipboard && navigator.clipboard.writeText) {
+                    navigator.clipboard.writeText('').catch(() => {});
+                }
+            }
+            if ((e.metaKey && e.shiftKey && (e.key === 'S' || e.key === 's')) ||
+                (e.ctrlKey && e.shiftKey && (e.key === 'S' || e.key === 's'))) {
+                e.preventDefault();
+                reportScreenshotAttempt('Screenshot shortcut detected');
+            }
+            if (e.key === 'F12') {
+                e.preventDefault();
+                alert("Developer tools are disabled during exam!");
+                alert("Exam will be terminated for security violation!");
+            }
+        });
+
+        function confirmSubmit() {
+            if (warningCount >= 2) {
+                return confirm("You have received security warnings. Are you sure you want to submit?");
+            }
+            return confirm("Are you sure you want to submit your exam?");
+        }
+
+        getSecurityStatus();
+    </script>
+</body>
+</html>

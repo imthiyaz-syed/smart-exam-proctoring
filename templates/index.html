@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>PROCTOGUARD - Online Exam Monitoring Platform</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/fontawesome.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/templatemo-scholar.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/owl.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/animate.css') }}">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/proctoguard-ui.css') }}">
+</head>
+<body>
+  {% block navbar %}
+  <header class="header-area header-sticky">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <a href="{{ url_for('index') }}" class="logo">
+              <h1>PROCTOGUARD</h1>
+            </a>
+            <ul class="nav">
+              <li class="scroll-to-section"><a href="{{ url_for('index') }}" class="active">Home</a></li>
+              <li class="scroll-to-section"><a href="{{ url_for('faculty_login') }}">Faculty</a></li>
+              <li class="scroll-to-section"><a href="{{ url_for('studentlogin') }}">Students</a></li>
+              <li class="scroll-to-section"><a href="{{ url_for('adminlogin') }}">Admin</a></li>
+            </ul>
+            <a href="#" class="menu-trigger">
+              <span>Menu</span>
+            </a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  {% endblock %}
+
+  {% block content %}
+  <main class="ui-page">
+    <div class="ui-shell ui-stack">
+      <section class="ui-split">
+        <div class="ui-reveal">
+          <span class="ui-kicker">AI exam monitoring</span>
+          <h1 class="ui-title">Run secure online exams with clearer workflows for admins, faculty, and students.</h1>
+          <p class="ui-lead">
+            Proctoguard brings exam creation, live monitoring, question workflows, and results review
+            into one streamlined platform built for academic teams that need both speed and accountability.
+          </p>
+          <div class="ui-action-row">
+            <a href="{{ url_for('faculty_login') }}" class="btn btn-primary">Faculty Access</a>
+            <a href="{{ url_for('studentlogin') }}" class="btn btn-warning">Student Access</a>
+            <a href="{{ url_for('adminlogin') }}" class="btn btn-secondary">Admin Access</a>
+          </div>
+          <div class="ui-metrics">
+            <div class="ui-metric">
+              <strong>Secure</strong>
+              <span>Webcam-aware sessions with rule-based monitoring</span>
+            </div>
+            <div class="ui-metric">
+              <strong>Practical</strong>
+              <span>Fast question generation, paper creation, and review</span>
+            </div>
+            <div class="ui-metric">
+              <strong>Unified</strong>
+              <span>Connected dashboards for every role in the exam flow</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="ui-panel ui-reveal">
+          <span class="ui-kicker">Platform highlights</span>
+          <h2 class="ui-section-title">Everything needed for monitored assessments.</h2>
+          <div class="ui-stack">
+            <div class="ui-metric">
+              <strong>Question workflows</strong>
+              <span>Create, upload, refine, and review question papers in one place.</span>
+            </div>
+            <div class="ui-metric">
+              <strong>Exam readiness</strong>
+              <span>Faculty can quickly assemble exams from stored questions and schedule dates.</span>
+            </div>
+            <div class="ui-metric">
+              <strong>Result visibility</strong>
+              <span>Students and faculty can access results without leaving the platform.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="ui-reveal">
+        <div class="ui-panel">
+          <span class="ui-kicker">How it works</span>
+          <h2 class="ui-section-title">A cleaner exam lifecycle from setup to submission.</h2>
+          <div class="row g-4 mt-1">
+            <div class="col-lg-4">
+              <div class="ui-metric">
+                <strong>1. Prepare</strong>
+                <span>Admins onboard faculty and maintain the system environment.</span>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="ui-metric">
+                <strong>2. Publish</strong>
+                <span>Faculty generate questions, curate papers, and schedule upcoming exams.</span>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="ui-metric">
+                <strong>3. Monitor</strong>
+                <span>Students take exams with active security checks and live rule enforcement.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  {% endblock %}
+
+  {% block footer %}
+  <footer>
+    <div class="container">
+      <p>Proctoguard for online exam conducting and monitoring.</p>
+    </div>
+  </footer>
+  {% endblock %}
+
+  <script src="{{ url_for('static', filename='vendor/jquery/jquery.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/js/isotope.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/js/owl-carousel.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/js/counter.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/js/custom.js') }}"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const menuTrigger = document.querySelector('.menu-trigger');
+      const nav = document.querySelector('.nav');
+
+      if (menuTrigger && nav) {
+        menuTrigger.addEventListener('click', function (event) {
+          event.preventDefault();
+          nav.classList.toggle('active');
+        });
+      }
+    });
+  </script>
+  {% block scripts %}{% endblock %}
+</body>
+</html>
